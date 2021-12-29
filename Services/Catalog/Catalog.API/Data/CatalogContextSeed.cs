@@ -20,7 +20,7 @@ namespace Catalog.API.Data
 
         private static IEnumerable<Product> GetPreconfiguredProducts()
         {
-            return new List<Product>()
+            List<Product> list = new List<Product>()
             {
                 new Product()
                 {
@@ -83,6 +83,7 @@ namespace Catalog.API.Data
                     Category = "Home Kitchen"
                 }
             };
+            return list;
         }
     }
 }
